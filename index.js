@@ -57,4 +57,4 @@ export function toMarkdownLink(slug, label) {
   return `[${cleanLabel}](https://video2url.com/v/${slug})`;
 }
 
-export { Video2URL, Video2URLError } from './client.js';
+export { Video2URL, Video2URLError, verifyWebhookSignature } from './client.js';

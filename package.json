@@ -1,7 +1,7 @@
 {
   "name": "video2url-share-links",
-  "version": "0.1.0",
-  "description": "Zero-dependency utility for parsing, building, and formatting Video2URL share links in Node.js and browser environments.",
+  "version": "0.2.0",
+  "description": "Authenticated JavaScript SDK for uploads, URL imports, history and share management, with share-link utilities.",
   "type": "module",
   "main": "./index.cjs",
   "module": "./index.js",
@@ -18,7 +18,9 @@
     "index.cjs",
     "index.d.ts",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "client.js",
+    "client.cjs"
   ],
   "sideEffects": false,
   "scripts": {

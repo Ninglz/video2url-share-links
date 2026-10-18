@@ -65,3 +65,5 @@ module.exports = {
   buildDirectUrl,
   toMarkdownLink
 };
+
+Object.assign(module.exports, require('./client.cjs'));

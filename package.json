@@ -1,0 +1,51 @@
+{
+  "name": "video2url-share-links",
+  "version": "0.1.0",
+  "description": "Zero-dependency utility for parsing, building, and formatting Video2URL share links in Node.js and browser environments.",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "良竹",
+  "homepage": "https://video2url.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ninglz/video2url-share-links.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ninglz/video2url-share-links/issues"
+  },
+  "keywords": [
+    "video2url",
+    "share-links",
+    "url",
+    "video",
+    "markdown"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

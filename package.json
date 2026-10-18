@@ -1,7 +1,7 @@
 {
-  "name": "video2url-share-links",
-  "version": "0.2.0",
-  "description": "Authenticated JavaScript SDK for uploads, URL imports, history and share management, with share-link utilities.",
+  "name": "video2url",
+  "version": "0.1.0",
+  "description": "Official Video2URL SDK for server-side media uploads, remote URL imports, and share link management.",
   "type": "module",
   "main": "./index.cjs",
   "module": "./index.js",

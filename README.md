@@ -1,4 +1,4 @@
-# video2url-share-links
+# Video2URL
 
 Video2URL 官方 JavaScript / TypeScript SDK，支持 Node.js (>= 20) 环境下的 ESM 与 CommonJS，附带完整 TypeScript 类型定义。
 
@@ -19,7 +19,7 @@ Video2URL 官方 JavaScript / TypeScript SDK，支持 Node.js (>= 20) 环境下�
 ## 安装
 
 ```bash
-npm install video2url-share-links
+npm install video2url
 ```
 
 ---
@@ -27,7 +27,7 @@ npm install video2url-share-links
 ## 快速上手
 
 ```typescript
-import { Video2URL, Video2URLError } from 'video2url-share-links';
+import { Video2URL, Video2URLError } from 'video2url';
 import fs from 'node:fs';
 
 const apiKey = process.env.VIDEO2URL_API_KEY;
@@ -84,7 +84,7 @@ const client = new Video2URL({
 });
 ```
 
-> 写变异请求（上传、创建、删除）不执行静默自动重试，以防止网络异常重发导致重复资源。
+> 具有副作用的写操作请求（上传、创建、删除）不执行静默自动重试，以防止网络异常重发导致重复资源。
 
 ### 2. 文件上传 (`upload` 与底层分步接口)
 
@@ -199,7 +199,7 @@ import {
   buildDirectUrl,
   toMarkdownLink,
   parseShareUrl,
-} from 'video2url-share-links';
+} from 'video2url';
 
 // 生成分享 URL: https://video2url.com/v/sample-slug
 const shareUrl = buildShareUrl('sample-slug');
@@ -220,7 +220,7 @@ console.log(parsed?.slug); // 'sample-slug'
 服务端业务与 HTTP 状态异常统一抛出 `Video2URLError` 实例；原生网络故障、DNS 失败或 `AbortSignal` 取消则会抛出标准系统异常（如 `TypeError`、`DOMException` / `AbortError`）。
 
 ```typescript
-import { Video2URL, Video2URLError } from 'video2url-share-links';
+import { Video2URL, Video2URLError } from 'video2url';
 
 try {
   await client.getFile('file_nonexistent');
